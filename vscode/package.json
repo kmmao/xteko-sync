@@ -28,6 +28,9 @@
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
     },
+    "dependencies": {
+        "request": "^2.79.0"
+	},
     "contributes": {
         "configuration": {
             "type": "object",
