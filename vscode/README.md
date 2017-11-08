@@ -1,65 +1,39 @@
 # xteko-sync README
 
-This is the README for your extension "xteko-sync". After writing up a brief description, we recommend including the following sections.
+With xteko-sync, you can write [xTeko](https://docs.xteko.com) script using VSCode easily.
 
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+When you save a script on VSCode, it runs on your iPhone automatically!
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Pin version >= v3.2.3
+- Your iPhone and Desktop should using same WLAN
+- Only available for JavaScript files currently
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+On iPhone, you should open debug mode of xTeko, then you can see the connection address.
 
-For example:
+On VSCode, only `host` should be configured:
 
-This extension contributes the following settings:
+* `xteko-sync.host`: web server host
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+There are also two super easy solutions to setup host:
+
+- Click menu button at the top-right corner of your editor panel, there's a `Set Host` item
+- Trigger VSCode command with command+shift+p, type sethost then execute the command
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- Sync operation might be fired multiple times, looks like an issue of watchdog
+
+## Other Information
+
+- GitHub repo: https://github.com/cyanzhong/xteko-sync
+- Python script: https://github.com/cyanzhong/xteko-sync/blob/master/python/sync.py
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.1.0
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release of xteko-sync

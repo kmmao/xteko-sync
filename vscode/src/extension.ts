@@ -10,7 +10,7 @@ export function activate(context: ExtensionContext) {
         window.showInputBox({
             placeHolder: 'Example: 10.106.144.196',
             value: workspace.getConfiguration().host
-        }).then(value => {
+        }).then((value) => {
             if (value.length > 0) {
                 workspace.getConfiguration().update('host', value, true);
                 window.showInformationMessage('Host: ' + value);
@@ -22,7 +22,7 @@ export function activate(context: ExtensionContext) {
     let path = window.activeTextEditor.document.fileName;
     let watcher = workspace.createFileSystemWatcher(path);
 
-    watcher.onDidChange(event => {
+    watcher.onDidChange((event) => {
 
         // Check host is available
         let host = workspace.getConfiguration().host;
@@ -36,7 +36,7 @@ export function activate(context: ExtensionContext) {
         var request = require('request');
         var fs = require('fs');
         var formData = {'files[]': fs.createReadStream(path)};
-        request.post({url: 'http://' + host + '/upload', formData: formData}, error => {
+        request.post({url: 'http://' + host + '/upload', formData: formData}, (error) => {
             if (error) {
                 onError(error);
             }
