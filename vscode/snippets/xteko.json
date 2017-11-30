@@ -1,0 +1,25 @@
+{
+  "$ui.render": {
+    "prefix": "$ui.render",
+    "body": [
+      "\\$ui.render({",
+      "\tprops: {",
+      "\t\t$1",
+      "\t},",
+      "\tviews: [{",
+      "\t\t$2",
+      "\t}]",
+      "})"
+    ],
+    "description": "$ui.render"
+  },
+  "layout": {
+    "prefix": "layout",
+    "body": [
+      "layout: function(make, view) {",
+      "\t$1",
+      "}"
+    ],
+    "description": "layout"
+  }
+}

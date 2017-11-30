@@ -55,6 +55,12 @@
                     "command": "extension.setHost"
                 }
             ]
-        }
+        },
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/xteko.json"
+            }
+        ]
     }
 }
